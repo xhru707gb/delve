@@ -77,6 +77,11 @@ Requirements:
 make build
 ```
 
+## Tips (personal notes)
+
+- When debugging tests, `dlv test -- -run TestFoo` is handy for targeting a single test case.
+- Use `config substitute-path` in the dlv REPL if source paths don't resolve correctly after a remote attach.
+
 ## Contributing
 
 Please read the [contribution guidelines](CONTRIBUTING.md) before submitting a pull request.
