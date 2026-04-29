@@ -83,6 +83,8 @@ make build
 - Use `config substitute-path` in the dlv REPL if source paths don't resolve correctly after a remote attach.
 - `dlv debug --headless --listen=:2345 ./cmd/myapp` is useful for attaching VS Code or GoLand remotely.
 - To pretty-print a struct without truncation, use `config max-string-len 1000` before printing.
+- To increase the number of array/slice elements shown, use `config max-array-values 128` — the default of 64 is often too low for inspecting larger slices.
+- Useful `.dlv` init file snippet: `config max-string-len 1000` + `config max-array-values 128` so these apply automatically on startup.
 
 ## Contributing
 
